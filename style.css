@@ -5,7 +5,7 @@
     padding: 0;
     outline: none;
     box-sizing: border-box;
-    text-decoration: none;
+
 }
 
 nav{
@@ -24,7 +24,6 @@ nav{
 }
 
 .title h1{
-    margin-bottom: 4pt;
     margin:0 0 0.2rem 0 ;
     margin-right: auto;
     margin-left: auto;
@@ -33,6 +32,7 @@ nav{
     font-family: 'Allison', cursive;
     font-weight: 700;
     user-select: none;
+
 
 }
 .under-title{
@@ -47,8 +47,14 @@ nav{
     height: 100%;
     float: left;
 }
+.under-title img{
+    margin-top:2rem ;
+    width:100%;
+    box-shadow:0 0 4px #79178d , 0 0 8px #2a3a83;
+    border-radius: 12%;
+ }
 .under-title ul{
-    margin-top: 16.8rem;
+    padding-top: 2rem;
     list-style: none;
 }
 .under-title ul li {
@@ -56,7 +62,7 @@ nav{
     color:#fff;
     margin: 0 5px;
     margin-left: auto;
-   margin-right: auto;
+    margin-right: auto;
    
 }
 .under-title ul li a{
@@ -65,8 +71,32 @@ nav{
   text-decoration: none;
   font-size: 21px;
   padding: 8px 0 0 0;
+  width: 100%;
+  text-align: center;
+  display: block;
+  transition: 0.4s;
   
 }
+
+.under-title ul li a:hover{
+    background: #912caa;
+    box-shadow:0 0 4px #79178d , 0 0 8px #233270;
+    border-radius: 4px;
+}
+
+.under-title p {
+    font-family: 'Allison', cursive;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    font-size: 26pt;
+    margin-top: 1rem;
+    margin-left: 10%;
+    transform: rotate(-20deg);
+    user-select: none;
+}
+
 
 @media screen and (max-width:357px) {
     .title{
@@ -81,11 +111,20 @@ nav{
         font-family: 'Allison', cursive;
         font-weight: 700;
     }
-   
+    .under-title{
+        float: left;
+        width: 23%;
+    }
+    .under-title{
+        float: left;
+        width: 25%;
+        font-size:18px;
+    }
 }
 @media screen and (max-width:710px) {
     .under-title{
         float: left;
-        width: 23%;
+        width: 25%;
+        font-size:18px;
     }
 }
